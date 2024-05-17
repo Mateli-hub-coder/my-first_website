@@ -1,13 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First Website</title>
-</head>
-<body>
-    <h1>Hello World, Mateli here</h1>
-    <p>I <b>love coding</b> and I'm a <em>tech enthusiast</em>, <br> who aspire to be a <strong>Full-stack developer</strong></p>
-    <img src="./images/myImg.jpg" alt="my image"  height="500">
-</body>
+    <!-- adding my favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" width="100px" height="100px">
+    <!-- using internal css -->
+    <style>
+      h1,
+      h2 {
+        font-family: verdana;
+        font-size: 300%;
+      }
+      p {
+        font-family: courier;
+        font-size: 160%;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      a:hover {
+        color: red;
+        background-color: transparent;
+      }
+      table, th, tr, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+        font-family: verdana;
+      }
+      caption {
+        font-family: verdana;
+        font-size: 150%;
+        padding-bottom: 8px;
+      }
+      th{
+        font-family: verdana;
+        color: rgba(106, 91, 209, 1);
+        font-size: 1.3rem;
+      }
+
+    </style>
+  </head>
+  <body style="text-align: center; background-color: hsla(9, 100%, 64%, 0.4)">
+    <!-- my important heading -->
+    <div style="width: 500px; margin: auto;">
+    <h1 style="color: rgb(255, 0, 55)">
+      Hello World, <span style="color: rgba(106, 91, 209, 1)">MATELI</span> Here!
+    </h1>
+    <p>
+      I
+      <b
+        >love coding
+        <img
+          src="images/programming.gif"
+          alt="Computer man"
+          style="width: 35px; height: 35px"
+      /></b>
+      and I am a <em>tech enthusiast</em>, <br />
+      who aspire to be a <strong>Full-stack developer.</strong>
+    </p>
+    <img src="./images/myImg.jpg" alt="man sitting on a desk" height="400" />
+    <h2>What I am doing</h2>
+    <p>
+      learning coding is not easy but with consistency you can do amazing
+      things. <br />
+      That is why I am doing the #100DayCodechallenge to build a habit of coding
+      daily <br />
+      by
+      <a
+        href="https://x.com/boniface_mateli"
+        title="click me"
+        style="border: 1px solid rgb(106, 91, 209)"
+        target="_blank"
+        ><strong> documenting </strong></a
+      >my progress.
+    </p>
+    <table style="width: 100%;">
+        <caption>My Programme</caption>
+        <th colspan="2" style="padding: 10px;">Front-end</th>
+        <tr>
+            <th style="padding: 6px;">Language</th>
+            <th style="padding: 6px;">Purpose</th>
+        </tr>
+        <tr>
+            <td>HTML</td> 
+            <td>For skeleton and structure of a website</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+            <td>For styling my webpage</td>
+        </tr>
+        <tr>
+            <td>JavaScript</td>
+            <td>For Interactivity</td>
+        </tr>
+        <tr>
+            <td>React</td>
+            <td>For functionality</td>
+        </tr>
+        <th colspan="2" style="padding: 10px;">Back-end</th>
+        <tr>
+            <td>NodeJs</td> 
+            <td>For back-end development</td>
+        </tr>
+        <th colspan="2" style="padding: 10px;">Database</th>
+        <tr>
+            <td>MySql/MongoDb</td> 
+            <td>For Data Storage</td>
+        </tr>
+        <th colspan="2" style="padding: 10px;">Others</th>
+        <tr>
+            <td>API</td> 
+            <td>For accesseing data</td>
+        </tr>
+        <tr>
+            <td>GitHub</td> 
+            <td>For teamwork and version control</td>
+        </tr>
+        <tr>
+            <td>Netlify/Vercel/AWS</td> 
+            <td>For Deployment</td>
+        </tr>
+    </table>
+</div>
+  </body>
 </html>
