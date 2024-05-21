@@ -5,59 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>First Website</title>
     <!-- adding my favicon -->
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" width="100px" height="100px">
-    <!-- using internal css -->
-    <style>
-      h1,
-      h2 {
-        font-family: verdana;
-        font-size: 300%;
-      }
-      p {
-        font-family: courier;
-        font-size: 160%;
-      }
-      a {
-        color: black;
-        text-decoration: none;
-      }
-      a:hover {
-        color: red;
-        background-color: transparent;
-      }
-      table, th, tr, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-        padding: 10px;
-        font-family: verdana;
-      }
-      caption {
-        font-family: verdana;
-        font-size: 150%;
-        padding-bottom: 8px;
-        color: brown;
-      }
-      th{
-        font-family: verdana;
-        color: rgba(106, 91, 209, 1);
-        font-size: 1.3rem;
-      }
-      ol {
-        display: block;
-      }
-      li {
-        text-align: start;
-        font-family: verdana;
-      }
-
-    </style>
   </head>
-  <body style="text-align: center; background-color: hsla(9, 100%, 64%, 0.4)">
+  <body>
     <!-- my important heading -->
-    <div style="width: 500px; margin: auto;">
-      <section>
-    <h1 style="color: rgba(184, 72, 72, 0.753)">
-      Hello World, <span style="color: rgba(106, 91, 209, 1)">MATELI</span> Here!
+    <div class="container">
+    <section>
+    <h1 class="heading">
+      Hello World, <span class="mySpan">MATELI</span> Here!
     </h1>
     <p>
       I
@@ -68,10 +24,10 @@
           alt="Computer man"
           style="width: 35px; height: 35px"
       /></b>
-      and I am a <em>tech enthusiast</em>, <br />
+      and I am a <em style="font-weight: 600;">tech enthusiast</em>, <br />
       who aspire to be a <strong>Full-stack developer.</strong>
     </p>
-    <img src="./images/myImg.jpg" alt="man sitting on a desk" height="400" />
+    <img src="./images/myImg.jpg" alt="man sitting on a desk" height="300" />
     </section>
     <section>
     <h2>What I'll be doing</h2>
@@ -84,95 +40,60 @@
       <a
         href="https://x.com/boniface_mateli"
         title="click me"
-        style="border: 1px solid rgb(106, 91, 209)"
+        style="border: 1px solid rgb(106, 91, 209);"
         target="_blank"
         ><strong> documenting </strong></a
       >my progress.
     </p>
-    <table style="width: 100%;">
+    <table>
         <caption>My Programme</caption>
         <th colspan="2" style="padding: 10px;">Front-end</th>
         <tr>
-            <th style="padding: 6px;">Language</th>
-            <th style="padding: 6px;">Purpose</th>
+            <th>Language</th>
+            <th>Purpose</th>
         </tr>
         <tr>
-            <td>HTML</td> 
+            <td class="bold">HTML</td> 
             <td>For skeleton and structure of a website</td>
         </tr>
         <tr>
-            <td>CSS</td>
+            <td class="bold">CSS</td>
             <td>For styling my webpage</td>
         </tr>
         <tr>
-            <td>JavaScript</td>
+            <td class="bold">JavaScript</td>
             <td>For Interactivity</td>
         </tr>
         <tr>
-            <td>React</td>
+            <td class="bold">React</td>
             <td>For functionality</td>
         </tr>
         <th colspan="2" style="padding: 10px;">Back-end</th>
         <tr>
-            <td>NodeJs</td> 
+            <td class="bold">NodeJs</td> 
             <td>For back-end development</td>
         </tr>
         <th colspan="2" style="padding: 10px;">Database</th>
         <tr>
-            <td>MySql/MongoDb</td> 
+            <td class="bold">MySql/MongoDb</td> 
             <td>For Data Storage</td>
         </tr>
         <th colspan="2" style="padding: 10px;">Others</th>
         <tr>
-            <td>API</td> 
+            <td class="bold">API</td> 
             <td>For accesseing data</td>
         </tr>
         <tr>
-            <td>GitHub</td> 
+            <td class="bold">GitHub</td> 
             <td>For teamwork and version control</td>
         </tr>
         <tr>
-            <td>Netlify/Vercel/AWS</td> 
+            <td class="bold">Netlify/Vercel/AWS</td> 
             <td>For Deployment</td>
         </tr>
     </table>
     </section>
-    <section>
-      <h2>My Progress & learning</h2>
-       <h3 style="color: rgba(184, 72, 72, 0.753); font-size: 3rem;">Day 1</h3>
-      <ol>
-        <li>Basics of html</li>
-        <li>Html elements</li>
-        <li>Html tags</li>
-        <li>Html attributes</li>
-        <li>Html styles</li>
-        <li>Html headings</li>
-        <li>Html paragraphs</li>
-        <li>Html formatting</li>
-        <li>Html quotations</li>
-        <li>Html comments</li>
-      </ol>
-      <h3 style="color: rgba(184, 72, 72, 0.753); font-size: 3rem;">Day 2 & 3</h3>
-      <ol>
-        <li>Html CSS</li>
-        <li>Html Links</li>
-        <li>Html Images</li>
-        <li>Html Favicon</li>
-        <li>Html Page Title</li>
-        <li>Html Tables</li>
-        <li>Html Lists</li>
-        <li>Html Block & Inline</li>
-        <li>Html Div</li>
-        <li>Html Classes</li>
-        <li>Html Id</li>
-        <li>Html Iframes</li>
-        <li>Html Javascript</li>
-        <li>Html File Paths</li>
-        <li>Html Head</li>
-        <li>Html Layout</li>
-        <li>Html Responsive</li>
-      </ol>
-    </section>
+    <a href="progress.html"><button role="button" type="button" class="myBtn">My Progress</button></a>
 </div>
   </body>
 </html>
